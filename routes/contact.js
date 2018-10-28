@@ -4,11 +4,11 @@ var mail = require('../emails/sendEmail');
 
 /* GET users listing. */
 router.post('/', function(req, res, next) {
-  console.log(req.body);
-
   mail.sendEmail('Novo contato atraves do app CPGER', req.body);
 
-  res.sendStatus(200);
+  res.json({
+    message: 'email enviado com sucesso'
+  });
 });
 
 module.exports = router;
