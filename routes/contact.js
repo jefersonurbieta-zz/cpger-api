@@ -8,7 +8,7 @@ router.post('/', function(req, res, next) {
 
   mail.sendEmail('Novo contato atraves do app CPGER', req.body);
 
-  res.json(req.body);
+  res.sendStatus(200);
 });
 
 module.exports = router;
