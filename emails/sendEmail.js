@@ -25,13 +25,13 @@ function prepararAnexos (dados) {
   var attachments = [];
 
   for (var i = 0; i < dados.attachments.length; i++) {
-    var extesion = getExtension(dados.attachments[i]);
+    var extesion = getExtension(dados.attachments[i].image);
 
     if (extesion) {
 
       attachments.push({
         filename: 'imagem' + i + '.' + extesion,
-        content: dados.attachments[i].replace('data:image/' + extesion + ';base64,', ''),
+        content: dados.attachments[i].image.replace('data:image/' + extesion + ';base64,', ''),
         encoding: 'base64'
       });
     }
