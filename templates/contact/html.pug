@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        style
+            include style.css
+    body
+
+        h2 Cliente
+        p <strong>Nome</strong> #{nome}
+        p <strong>Email</strong> #{email}
+
+        h2 Dados do Calculo
+        p <strong>Vazão</strong> #{dados.vazao}
+        p <strong>Unidade de Medida da Vazão</strong> #{dados.unidVazaoLbl}
+        p <strong>Pressão</strong> #{dados.pressao}
+        p <strong>Unidade de Medida da Pressão</strong> #{dados.unidPressaoLbl}
+
+        h2 Resultado do Calculo
+        p <strong>Potência</strong> #{dados.potencia}
+        p <strong>Valor Por Dia R$</strong> #{dados.valorDia}
+        p <strong>Valor Por Mês R$</strong> #{dados.valorMes}
+        p <strong>Valor Por Ano R$</strong> #{dados.valorAno}
+
+        h2 Configurações
+        p <strong>Tarifa de Energia <span class="unidade-medida">(R$/kWh)</span></strong> #{settings.tarifa}
+        p <strong>Rendimento do Gerador <span class="unidade-medida">(%)</span></strong> #{settings.rendimentoGerador}
+        p <strong>Peso Especifico da água <span class="unidade-medida">(Kg/m³)</span></strong> #{settings.pesoAgua}
+        p <strong>Aceleração da gravidade <span class="unidade-medida">(m/s²)</span></strong> #{settings.aceleracaoGravidade}
+        p <strong>Horas por dia</strong> #{settings.horasPorDia}
