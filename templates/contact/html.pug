@@ -17,14 +17,14 @@ html
         p <strong>Unidade de Medida da Pressão</strong> #{dados.unidPressaoLbl}
 
         h2 Resultado do Calculo
-        p <strong>Potência</strong> #{dados.potencia}
+        p <strong>Potência</strong> #{dados.potencia} kW
         p <strong>Valor Por Dia R$</strong> #{dados.valorDia}
         p <strong>Valor Por Mês R$</strong> #{dados.valorMes}
         p <strong>Valor Por Ano R$</strong> #{dados.valorAno}
 
         h2 Configurações
         p <strong>Tarifa de Energia <span class="unidade-medida">(R$/kWh)</span></strong> #{settings.tarifa}
-        p <strong>Rendimento do Gerador <span class="unidade-medida">(%)</span></strong> #{settings.rendimentoGerador}
-        p <strong>Peso Especifico da água <span class="unidade-medida">(Kg/m³)</span></strong> #{settings.pesoAgua}
-        p <strong>Aceleração da gravidade <span class="unidade-medida">(m/s²)</span></strong> #{settings.aceleracaoGravidade}
+        p <strong>Rendimento do Gerador</strong> #{settings.rendimentoGerador} %
+        p <strong>Peso Especifico da água</strong> #{settings.pesoAgua} Kg/m³
+        p <strong>Aceleração da gravidade</strong> #{settings.aceleracaoGravidade} m/s²
         p <strong>Horas por dia</strong> #{settings.horasPorDia}
