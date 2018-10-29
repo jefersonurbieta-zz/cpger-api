@@ -6,25 +6,23 @@ html
     body
 
         h2 Cliente
-        p <strong>Nome</strong> #{nome}
-        p <strong>Telefone</strong> #{telefone}
-        p <strong>Email</strong> #{email}
+        p <strong>Nome:</strong> #{nome}
+        p <strong>Telefone:</strong> #{telefone}
+        p <strong>Email:</strong> #{email}
 
         h2 Dados do Calculo
-        p <strong>Vazão</strong> #{dados.vazao}
-        p <strong>Unidade de Medida da Vazão</strong> #{dados.unidVazaoLbl}
-        p <strong>Pressão</strong> #{dados.pressao}
-        p <strong>Unidade de Medida da Pressão</strong> #{dados.unidPressaoLbl}
+        p <strong>Vazão:</strong> #{dados.vazao} #{dados.unidVazaoLbl}
+        p <strong>Pressão</strong> #{dados.pressao} #{dados.unidPressaoLbl}
 
         h2 Resultado do Calculo
-        p <strong>Potência</strong> #{dados.potencia} kW
-        p <strong>Valor Por Dia R$</strong> #{dados.valorDia}
-        p <strong>Valor Por Mês R$</strong> #{dados.valorMes}
-        p <strong>Valor Por Ano R$</strong> #{dados.valorAno}
+        p <strong>Potência:</strong> #{dados.potencia} kW
+        p <strong>Valor Por Dia: R$</strong> #{dados.valorDia}
+        p <strong>Valor Por Mês: R$</strong> #{dados.valorMes}
+        p <strong>Valor Por Ano: R$</strong> #{dados.valorAno}
 
         h2 Configurações
-        p <strong>Tarifa de Energia <span class="unidade-medida">(R$/kWh)</span></strong> #{settings.tarifa}
-        p <strong>Rendimento do Gerador</strong> #{settings.rendimentoGerador} %
-        p <strong>Peso Especifico da água</strong> #{settings.pesoAgua} Kg/m³
-        p <strong>Aceleração da gravidade</strong> #{settings.aceleracaoGravidade} m/s²
-        p <strong>Horas por dia</strong> #{settings.horasPorDia}
+        p <strong>Tarifa de Energia:</strong> #{settings.tarifa} R$/kWh
+        p <strong>Rendimento do Gerador:</strong> #{settings.rendimentoGerador} %
+        p <strong>Peso Especifico da água:</strong> #{settings.pesoAgua} Kg/m³
+        p <strong>Aceleração da gravidade:</strong> #{settings.aceleracaoGravidade} m/s²
+        p <strong>Horas por dia:</strong> #{settings.horasPorDia}
