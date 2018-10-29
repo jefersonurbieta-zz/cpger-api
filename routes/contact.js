@@ -25,10 +25,6 @@ function formatMoney(amount, decimalCount = 2, decimal = ",", thousands = ".") {
   }
 }
 
-document.getElementById("b").addEventListener("click", event => {
-  document.getElementById("x").innerText = "Result was: " + formatMoney(document.getElementById("d").value);
-});
-
 function formatDataContact (contact) {
   contact.dados.vazao = formatMoney(Number(contact.dados.vazao).toFixed(2));
   contact.dados.pressao = formatMoney(Number(contact.dados.pressao).toFixed(2));
