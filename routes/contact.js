@@ -46,6 +46,8 @@ function formatDataContact (contact) {
 
 /* GET users listing. */
 router.post('/', function (req, res, next) {
+  console.log(req.body)
+
   mail.sendEmail('Novo contato atraves do app CPGER', formatDataContact(req.body));
 
   res.json({
