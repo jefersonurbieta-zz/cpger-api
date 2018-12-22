@@ -39,6 +39,8 @@ function formatDataContact (contact) {
   contact.settings.aceleracaoGravidade = formatMoney(Number(contact.settings.aceleracaoGravidade).toFixed(2));
   contact.settings.horasPorDia = formatMoney(Number(contact.settings.horasPorDia).toFixed(2));
 
+  console.log(contact)
+
   return contact;
 }
 
