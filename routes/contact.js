@@ -33,11 +33,11 @@ function formatDataContact (contact) {
   contact.dados.valorMes = formatMoney(Number(contact.dados.valorMes).toFixed(2));
   contact.dados.valorAno = formatMoney(Number(contact.dados.valorAno).toFixed(2));
 
-  contact.settings.tarifa = formatMoney(Number(contact.settings.tarifa).toFixed(2));
-  contact.settings.rendimentoGerador = formatMoney(Number(contact.settings.rendimentoGerador).toFixed(2));
-  contact.settings.pesoAgua = formatMoney(Number(contact.settings.pesoAgua).toFixed(2));
-  contact.settings.aceleracaoGravidade = formatMoney(Number(contact.settings.aceleracaoGravidade).toFixed(2));
-  contact.settings.horasPorDia = formatMoney(Number(contact.settings.horasPorDia).toFixed(2));
+  contact.configuracao.tarifa = formatMoney(Number(contact.configuracao.tarifa).toFixed(2));
+  contact.configuracao.rendimentoGerador = formatMoney(Number(contact.configuracao.rendimentoGerador).toFixed(2));
+  contact.configuracao.pesoAgua = formatMoney(Number(contact.configuracao.pesoAgua).toFixed(2));
+  contact.configuracao.aceleracaoGravidade = formatMoney(Number(contact.configuracao.aceleracaoGravidade).toFixed(2));
+  contact.configuracao.horasPorDia = formatMoney(Number(contact.configuracao.horasPorDia).toFixed(2));
 
   console.log(contact)
 
