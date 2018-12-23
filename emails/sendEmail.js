@@ -43,12 +43,12 @@ function prepararAnexos (dados) {
 exports.sendEmail = function (subject, dados) {
 
   var transporter = nodemailer.createTransport({
-    host: 'smtp-pulse.com',
-    port: 465,
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
     secure: true,
     auth: {
-      user: 'jeferson.urbieta@gmail.com',
-      pass: 'e9ZSfBJJmB'
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASSWORD
     }
   });
 
