@@ -48,7 +48,7 @@ function formatDataContact (contact) {
 router.post('/', function (req, res, next) {
   console.log(req.body)
 
-  mail.sendEmail('Novo contato atraves do app CPGER', formatDataContact(req.body));
+  mail.sendEmail(process.env.CONTATO_ASSUNTO_EMAIL, formatDataContact(req.body));
 
   res.json({
     message: 'email enviado com sucesso'
